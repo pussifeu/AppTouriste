@@ -1,0 +1,42 @@
+﻿@model AppTourist.Models.visiter
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>visiter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.site.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.site.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.visiteur.Nom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.visiteur.Nom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateVisite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateVisite)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
