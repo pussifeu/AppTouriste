@@ -46,7 +46,7 @@ namespace AppTourist.Controllers
         // plus de détails, voir  https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Nom,Adresse")] visiteur visiteur)
+        public ActionResult Create([Bind(Include = "Id,Numero,Nom,Adresse")] visiteur visiteur)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace AppTourist.Controllers
         // plus de détails, voir  https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Nom,Adresse")] visiteur visiteur)
+        public ActionResult Edit([Bind(Include = "Id,Numero,Nom,Adresse")] visiteur visiteur)
         {
             if (ModelState.IsValid)
             {

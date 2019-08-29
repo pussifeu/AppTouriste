@@ -17,6 +17,11 @@ namespace AppTourist.Models
 
         public int Id { get; set; }
 
+
+        [Required]
+        [StringLength(50)]
+        public string Numero { get; set; }
+
         [Required]
         [StringLength(50)]
         public string Nom { get; set; }

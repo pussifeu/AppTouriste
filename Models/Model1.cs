@@ -32,8 +32,12 @@ namespace AppTourist.Models
                 .HasForeignKey(e => e.IdSite);
 
             modelBuilder.Entity<visiteur>()
-                .Property(e => e.Nom)
+                .Property(e => e.Numero)
                 .IsUnicode(false);
+
+            modelBuilder.Entity<visiteur>()
+             .Property(e => e.Nom)
+             .IsUnicode(false);
 
             modelBuilder.Entity<visiteur>()
                 .Property(e => e.Adresse)
