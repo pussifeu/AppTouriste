@@ -4,21 +4,22 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Liste des sites</h2>
+<h3>Liste des sites</h3>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Ajouter un nouveau site", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Nom)
+           Nom du site
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Lieu)
+            Lieu du site
         </th>
+
         <th>
-            @Html.DisplayNameFor(model => model.Tarif)
+            Tarif du site
         </th>
         <th></th>
     </tr>
@@ -35,9 +36,9 @@
             @Html.DisplayFor(modelItem => item.Tarif)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+            @Html.ActionLink("Modifier", "Edit", new { id = item.Id }) |
+            <!--@Html.ActionLink("Details", "Details", new { id=item.Id }) |-->
+            @Html.ActionLink("Supprimer", "Delete", new { id = item.Id })
         </td>
     </tr>
 }

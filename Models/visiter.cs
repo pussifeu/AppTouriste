@@ -9,17 +9,17 @@ namespace AppTourist.Models
     [Table("touriste.visiter")]
     public partial class visiter
     {
-        [Key]
+
+        public int Id { get; set; }
         [Column(Order = 0)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IdVisiteur { get; set; }
 
-        [Key]
+
         [Column(Order = 1)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int IdSite { get; set; }
 
-        [Key]
         [Column(Order = 2)]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Nbjour { get; set; }
